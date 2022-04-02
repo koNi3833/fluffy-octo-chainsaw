@@ -5,68 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>インデックス画面</title>
+    <title>chatBot</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.10.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.10.0/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
-    <div class="title">こんにちは<br>おかず探しにご利用ください</div>
-    <p>
-    <input type="button" value="ランダム" onclick="random()">
-    </p>
-    タイプを選択→<input type="checkbox" name=“sample” value="1">3次元
-    <input type="checkbox" name=“sample” value="2">2次元
-    <input type="checkbox" name=“sample” value="3">その他
-    <br>
-
-
-    <div class="tooltip2">
-        <p>キーワードを入力→<input type="text" placeholder="名前、名前の一部など" id="Kword"></p>
-        <div class="description2">現在名前での検索に対応しています。</div>
-    </div>
-
-    <br>
-    <input type="button" value="検索">
-    <p>
-    <div id="title"></div>
-    <div id="name"></div>
-    <div id="type"></div>
-    <div id="recommended"></div>
-    </p>
-    <p>
-        <input type="button" value="おススメを登録される方はクリック" onclick="subm()" />
-        <form action="success.html" method="GET" enctype="text/plain">
-            <div id="subForm">
-                名前：<input type="text" placeholder="名前を入力" name="chaName" required><br>
-                タイプ：
-                <input type="radio" name="type" value="3" checked> ３次元
-                <input type="radio" name="type" value="2"> 2次元
-                <input type="radio" name="type" value="1"> その他<br>
-                おススメ度：
-                <input type="radio" name="osusume" value="1"> 1
-                <input type="radio" name="osusume" value="2"> 2
-                <input type="radio" name="osusume" value="3"> 3
-                <input type="radio" name="osusume" value="4"> 4
-                <input type="radio" name="osusume" value="5" checked> 5
-                <br>
-                <input type="submit" value="登録">
+        <div class="field">
+            <div class="title">
+                レス子ちゃん
             </div>
-        </form>
-    </p>
+            <div class="scroll">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="amane_color.png" alt="女の子" title="女の子" height="40px" width="40px">
+                        </td>
+                        <td id="bot">
+                            <div id="word1">
+                                ごきげんよう、お久しぶりですね。ごきげんよう、お久しぶりですね。ごきげんよう、お久しぶりですね。
+                            </div>
+                        </td>
+                    </tr>
 
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+                    <tr>
+                        <td>
+                            <img src="symbol047.png" alt="あなた" title="あなた" height="40px" width="40px">
+                        </td>
+                        <td id="me">
+                            <div id="word2">
+                                ここにテキストが入ります。
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form">
+                <input type="text" class="input_text">
+                <input type="button" value="送信" class="input_btn">
+            </div>
+        </div>
 </body>
 
 </html>

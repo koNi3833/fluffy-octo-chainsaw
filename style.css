@@ -1,35 +1,124 @@
-.tooltip2{
+
+.field{
     position: relative;
-    cursor: pointer;
-    display: inline-block;
+    background-color: aliceblue;
+    width: 350px;
+    height: 450px;
+    right: 0px;
+    bottom: 0px;
+
 }
-.tooltip2 p{
-    margin:0;
-    padding:0;
-}
-.description2 {
-    display: none;
+
+.title{
     position: absolute;
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+    top: 5px;
+    right: 5px;
+    width: 340px;
+    font-weight: bold;
+}
+
+.scroll{
+    position: absolute;
+    background-color: aliceblue;
+    width: 340px;
+    height: 380px;
+    bottom: 40px;
+    right: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.form{
+    position: absolute;
+    background-color: chartreuse;
+    bottom: 10px;
+    right: 5px;
+    height: 30px;
+    width: 340px;
+}
+
+#bot{
+    width: 280px;
+}
+
+#me{
+    width: 280px;
+}
+
+#word1{
+    background-color: chocolate;
+    
+}
+
+#word1{
+    position:relative;
+    width: 220px;
+    height:auto;
+    left: 20px;
+    background-color: aquamarine;
+    padding:10px;
+    text-align:left;
+    color:#333333;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:15px;
+}
+#word1:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(90, 230, 40, 0);
+    border-top-width:5px;
+    border-bottom-width:5px;
+    border-right-width:20px;
+    margin-top: -7px;
+    border-right-color:aquamarine;
+    right:235px;
+    top:60%;
+}
+
+
+#word2{
+    position:relative;
+    width: 220px;
+    height:auto;
+    left: 20px;
+    background-color: aquamarine;
     padding: 10px;
-    font-size: 12px;
-    line-height: 1.6em;
-    color: #fff;
-    border-radius: 5px;
-    background: #000;
-    width: 100px;
+    text-align:left;
+    color:#333333;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:15px;
 }
-.description2:before {
-    content: "";
-    position: absolute;
-    top: 0%;
-    right: 95%;
-    border: 15px solid transparent;
-    border-top: 15px solid #000;
-    margin-left: -15px;
-    transform: rotateZ(90deg);
+#word2:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(90, 230, 40, 0);
+    border-top-width:5px;
+    border-bottom-width:5px;
+    border-right-width:20px;
+    margin-top: -7px;
+    border-right-color:aquamarine;
+    right:235px;
+    top:60%;
 }
-.tooltip2:hover .description2{
-    display: inline-block;
-    top: 0px;
-    left: 320px;
+
+.input_text{
+    margin-left: 10px;
+    width: 250px;
+}
+
+.input_btn{
+    width: 50px;
 }
